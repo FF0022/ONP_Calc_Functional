@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
         for (const auto& wyr : expressions) {
             std::string onp = wyrnaONP(wyr);
             double result = obliczONP(onp);
-            rpnExpressions.push_back(rpn);
+            rpnExpressions.push_back(onp);
             results.push_back(result);
         }
 
