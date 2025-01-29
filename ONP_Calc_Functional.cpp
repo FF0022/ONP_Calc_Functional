@@ -32,9 +32,9 @@ int main(int argc, char* argv[]) {
         std::vector<std::string> rpnExpressions;
         std::vector<double> results;
 
-        for (const auto& expr : expressions) {
-            std::string rpn = infixToRPN(expr);
-            double result = evaluateRPN(rpn);
+        for (const auto& wyr : expressions) {
+            std::string onp = wyrnaONP(wyr);
+            double result = obliczONP(onp);
             rpnExpressions.push_back(rpn);
             results.push_back(result);
         }
